@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS cookbook 01</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <span class="logo">css cookbook</span>
+
+      <ul class="menu">
+        <li class="menu__item menu__item--about">about</li>
+        <li class="menu__item menu__item--pricing">pricing</li>
+        <li class="menu__item menu__item--contact">contact</li>
+      </ul>
+    </nav>
+
+    <form class="form-box">
+      <span class="form-box__header">Welcome to CSS cookbook</span>
+      <span class="form-box__paragraph"
+        >feel free to download our ready to use components and speed up your
+        development process
+      </span>
+
+      <input
+        type="text"
+        class="form-box__input form-box__input--e-mail"
+        placeholder="e-mail"
+      />
+      <input
+        type="password"
+        class="form-box__input form-box__input--password"
+        placeholder="password"
+      />
+
+      <button class="form-box__button form-box__button--create-account">
+        create account
+      </button>
+
+      <div class="form-box__footer">
+        <input type="checkbox" class="footer__checkbox" name="consent" />
+        <label class="footer__agreement" for="consent">
+          I agree to whatever you want me to agree
+        </label>
+      </div>
+    </form>
+  </body>
+</html>

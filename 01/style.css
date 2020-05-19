@@ -1,0 +1,120 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #171717;
+  font-family: 'Fira Mono', monospace;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input,
+button {
+  font-family: 'Fira Mono', monospace;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 35px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .menu {
+  width: 20%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.form-box {
+  width: 450px;
+  height: 500px;
+  padding: 30px;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-box .form-box__header {
+  margin-bottom: 14px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.form-box .form-box__paragraph {
+  text-align: center;
+  font-size: 14px;
+  color: lightgray;
+}
+
+.form-box .form-box__input {
+  width: 250px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  color: white;
+}
+
+.form-box .form-box__input--e-mail {
+  margin: 30px 0px;
+}
+
+.form-box .form-box__input--password {
+  margin-bottom: 80px;
+}
+
+.form-box .form-box__button {
+  width: 175px;
+  height: 35px;
+  background: white;
+  border: none;
+  font-weight: bold;
+}
+
+.form-box .form-box__footer {
+  margin-top: 20px;
+}
+
+.form-box .form-box__footer .footer__agreement {
+  font-size: 10px;
+  color: gray;
+}
+/*# sourceMappingURL=style.css.map */

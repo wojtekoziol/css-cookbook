@@ -1,0 +1,174 @@
+$dark: #171717;
+$light: #ffffff;
+$fira-code: 'Fira Code', monospace;
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background: $dark;
+	font-family: $fira-code;
+	color: $light;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	&__header {
+		font-size: 50px;
+	}
+
+	&__paragraph {
+		width: 550px;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+.content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+}
+
+.pricing-plan {
+	position: relative;
+	min-height: 500px;
+	width: 350px;
+	border: 5px solid $light;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	&:first-of-type {
+		right: -5px;
+	}
+
+	&:last-of-type {
+		left: -5px;
+	}
+
+	&__header {
+		font-size: 3em;
+	}
+
+	&__paragraph {
+		margin-top: 20px;
+		text-align: center;
+		width: 250px;
+	}
+
+	&__price {
+		margin-top: 50px;
+		font-size: 3em;
+	}
+
+	&__choose-button {
+		margin-top: 70px;
+		height: 40px;
+		width: 120px;
+		background: $light;
+		font-family: $fira-code;
+		color: $dark;
+		font-weight: bold;
+		border: 0;
+		outline: 0;
+	}
+
+	&--featured {
+		min-height: 550px;
+		background: $light;
+		color: $dark;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 95%;
+			height: 97%;
+			border: 7px solid $dark;
+		}
+
+		&::after {
+			content: 'most popular';
+			position: absolute;
+			top: 1.5%;
+			height: 30px;
+			width: 40%;
+			min-width: 45px;
+			background: $dark;
+			font-size: 0.8em;
+			color: $light;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.pricing-plan__header {
+			font-size: 4em;
+		}
+
+		.pricing-plan__paragraph {
+			font-size: 1.2em;
+		}
+
+		.pricing-plan__price {
+			font-size: 4em;
+		}
+
+		.pricing-plan__choose-button {
+			height: 50px;
+			width: 140px;
+			background: $dark;
+			color: $light;
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.info {
+		&__header {
+			margin-top: 40px;
+		}
+
+		&__paragraph {
+			margin-bottom: 50px;
+		}
+	}
+
+	.content {
+		grid-template-columns: 1fr;
+		row-gap: 20px;
+	}
+
+	.pricing-plan {
+		width: 85vw;
+
+		&:first-of-type {
+			right: 0;
+		}
+
+		&:last-of-type {
+			left: 0;
+			margin-bottom: 20px;
+		}
+	}
+}

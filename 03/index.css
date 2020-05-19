@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #171717;
+	font-family: 'Fira Code', sans-serif;
+	color: white;
+}
+
+.container {
+	height: 500px;
+	width: 50vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.container--odd {
+	float: right;
+}
+
+.container--even {
+	float: left;
+}
+
+.number-container {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.number-container--odd {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.number-container--even {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.number {
+	height: 100%;
+	width: 250px;
+	font-size: 400px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.15);
+}
+
+.article {
+	position: absolute;
+	min-height: 100px;
+	width: 700px;
+}
+
+.article__header {
+	font-size: 48px;
+	margin-bottom: 10px;
+}
+
+.article__paragraph {
+	font-size: 21px;
+}
+/*# sourceMappingURL=index.css.map */
